@@ -426,20 +426,20 @@ export const features = [
 ];
 
 export const vehicleClasses = [
-  { id: 1, name: "Cycle / bicycle" },
-  { id: 2, name: "Motorcycle / scooter" },
-  { id: 3, name: "Auto-rickshaw" },
-  { id: 4, name: "Slow small vehicle" },
-  { id: 5, name: "Tractor (with trailer)" },
-  { id: 6, name: "Car / jeep / taxi" },
-  { id: 7, name: "LCV / mini truck" },
-  { id: 8, name: "Big LCV / mini-bus" },
-  { id: 9, name: "Bus / coach" },
-  { id: 10, name: "3-axle truck" },
-  { id: 11, name: "Multi-axle heavy (4–6 axle)" },
-  { id: 12, name: "Very heavy multi-axle (7–10 axle)" },
-  { id: 13, name: "Bull cart" },
-  { id: 14, name: "Construction vehicle (JCB, etc.)" },
+  { id: 1, name: "Cycle" },
+  { id: 2, name: "Bike" },
+  { id: 3, name: "3 Wheeler" },
+  { id: 4, name: "Tractor" },
+  { id: 5, name: "Tractor with trolley" },
+  { id: 6, name: "Small commercial vehicle" },
+  { id: 7, name: "Passenger car" },
+  { id: 8, name: "DCM / Mini bus / LCV" },
+  { id: 9, name: "2-axle truck / Bus" },
+  { id: 10, name: "3-axle truck / Bus" },
+  { id: 11, name: "4-axle to 6-axle truck" },
+  { id: 12, name: "More than 6-axle truck" },
+  { id: 13, name: "Hand cart / Bull cart" },
+  { id: 14, name: "Construction vehicle" },
 ];
 
 export const faqs = [
