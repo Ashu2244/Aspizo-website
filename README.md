@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Aspizo IT Solutions — Marketing Website
 
-## Getting Started
+Professional multi-product website for Aspizo IT Solutions.
 
-First, run the development server:
+## Products
+
+- **Highway Incident Management** — AID & camera management (`/highway-incident-management`)
+- **Aspizo Vision** — Road defect survey reports (`/vision`)
+- **Aspizo Traffic Analyzer** — ATCC from DVR video (`/traffic-analyzer`)
+
+## Pages
+
+- `/` — Company home
+- `/about` — Field + software story
+- `/contact` — Contact form
+- `/download` — Traffic Analyzer Windows download
+- `/docs` · `/features` — Traffic Analyzer docs
+
+## Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build (static export for Cloudflare Pages)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+Output folder: `out/`
 
-To learn more about Next.js, take a look at the following resources:
+### Cloudflare Pages settings
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Setting | Value |
+|--------|--------|
+| Framework preset | None / Next.js (Static HTML Export) |
+| Build command | `npm run build` |
+| Build output directory | `out` |
+| Node version | 20 |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Upload Desktop App ZIP
 
-## Deploy on Vercel
+1. Place `Aspizo-Traffic-Analyzer-v1.0.zip` in `public/downloads/`
+2. Update SHA256 / file size in `src/lib/data.ts`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Tech Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Next.js (App Router, static export)
+- Tailwind CSS
+- Lucide React icons
+- Plus Jakarta Sans
