@@ -94,11 +94,14 @@ export const products = [
 ] as const;
 
 export const product = {
-  version: "1.0.0 (beta)",
-  releaseDate: "August 2025",
-  fileSize: "~450 MB",
-  fileName: "Aspizo-Traffic-Analyzer-v1.0.zip",
-  sha256: "Placeholder — update when ZIP is uploaded",
+  version: "3.2.0",
+  releaseDate: "September 2026",
+  fileSize: "~157 MB",
+  fileName: "Aspizo-Traffic-Analyzer-Setup-3.2.0.exe",
+  sha256:
+    "C30CBE39596674E895E0DD2A2FCD51C29141B2C1748B9FA7E5FCF6CB91EFF2FA",
+  downloadUrl:
+    "https://github.com/Ashu2244/Aspizo-website/releases/download/v3.2.0/Aspizo-Traffic-Analyzer-Setup-3.2.0.exe",
   enginePort: 8765,
   uiPort: 3000,
 };
@@ -490,24 +493,24 @@ export const systemRequirements = {
 };
 
 export const downloadIncludes = [
+  "Windows Setup installer (one-click)",
   "Detection engine (Python + YOLO)",
-  "Survey data entry UI",
-  "AI classifier (pre-trained)",
-  "Sample config + user guide",
+  "Desktop survey UI (Electron)",
+  "AI classifier (pre-trained) + auto dependency setup",
 ];
 
 export const installSteps = [
-  "Extract ZIP to C:\\Aspizo\\ (no spaces in path recommended)",
-  "Double-click START-ASPIZO.bat",
-  "Browser opens → fill Survey ID, Date, paste video folder path",
-  "Click Run Auto Detect",
+  "Download Aspizo-Traffic-Analyzer-Setup-3.2.0.exe from this page",
+  "Run the Setup and follow the installer prompts",
+  "Launch Aspizo Traffic Analyzer from the Start Menu / Desktop shortcut",
+  "Create a survey → add videos (local folder or Google Drive) → Run Auto Detect",
 ];
 
 export const docsSections = [
   {
     title: "Installation",
     content:
-      "Download the ZIP from the Download page, extract to C:\\Aspizo\\, and run START-ASPIZO.bat. Wait 1–2 minutes on first launch while the UI compiles. Engine runs at http://127.0.0.1:8765 and UI at http://localhost:3000.",
+      "Download Aspizo-Traffic-Analyzer-Setup-3.2.0.exe from the Download page and run the installer. First launch may install Visual C++ runtime, Python 3.12, pip packages, and the YOLO model automatically. The desktop app starts the engine locally; no ZIP extract or START-ASPIZO.bat required.",
   },
   {
     title: "First Survey Setup",
@@ -517,7 +520,7 @@ export const docsSections = [
   {
     title: "Video Folder Path",
     content:
-      "Paste the full path to your DVR video folder. Supports Uni+ DVR filenames like Uni+ DVR_ch4_main_20241229150000_20241229160000.mp4. Formats: MP4, AVI, MKV, MOV, ASF, DAV.",
+      "Paste a local DVR video folder path, copy videos into the app inbox, or import from a Google Drive share link. Supports Uni+ DVR filenames like Uni+ DVR_ch4_main_20241229150000_20241229160000.mp4. Formats: MP4, AVI, MKV, MOV, ASF, DAV.",
   },
   {
     title: "Auto Detect Settings",
@@ -532,6 +535,6 @@ export const docsSections = [
   {
     title: "Troubleshooting",
     content:
-      "Engine not running? Check START-ASPIZO.bat console for errors. 0 detections at night? Try day footage first or adjust count line placement. Blank Excel? Ensure CSV opened with UTF-8 encoding.",
+      "App won't start? Re-run Setup as Administrator and allow first-run dependency install. 0 detections at night? Try day footage first or adjust count line placement. Blank Excel? Ensure CSV opened with UTF-8 encoding.",
   },
 ];

@@ -42,10 +42,16 @@ Output folder: `out/`
 | Build output directory | `out` |
 | Node version | 20 |
 
-## Upload Desktop App ZIP
+## Desktop app download (GitHub Releases)
 
-1. Place `Aspizo-Traffic-Analyzer-v1.0.zip` in `public/downloads/`
-2. Update SHA256 / file size in `src/lib/data.ts`
+The Setup EXE (~157 MB) is hosted on GitHub Releases — not in `public/downloads/`
+(GitHub file size limit is 100 MB for repo files).
+
+1. Create release tag `v3.2.0` on this repo
+2. Upload `Aspizo-Traffic-Analyzer-Setup-3.2.0.exe` as a release asset
+3. Keep `product.downloadUrl` in `src/lib/data.ts` pointing at:
+   `https://github.com/Ashu2244/Aspizo-website/releases/download/v3.2.0/Aspizo-Traffic-Analyzer-Setup-3.2.0.exe`
+
 
 ## Tech Stack
 

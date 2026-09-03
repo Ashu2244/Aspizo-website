@@ -59,7 +59,7 @@ export default function DownloadPage() {
               </div>
 
               <a
-                href="/downloads/Aspizo-Traffic-Analyzer-v1.0.zip"
+                href={product.downloadUrl}
                 className="mb-4 flex w-full items-center justify-center gap-3 rounded-md bg-accent px-8 py-4 text-lg font-bold text-background transition-colors hover:bg-accent-hover"
               >
                 <Download className="h-6 w-6" />
