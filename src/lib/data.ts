@@ -94,14 +94,14 @@ export const products = [
 ] as const;
 
 export const product = {
-  version: "3.2.0",
+  version: "3.3.0",
   releaseDate: "September 2026",
   fileSize: "~157 MB",
-  fileName: "Aspizo-Traffic-Analyzer-Setup-3.2.0.exe",
+  fileName: "Aspizo-Traffic-Analyzer-Setup-3.3.0.exe",
   sha256:
-    "C30CBE39596674E895E0DD2A2FCD51C29141B2C1748B9FA7E5FCF6CB91EFF2FA",
+    "DD966E7FF48B00E86992127FED48207E38E292DF1D3DDE8D079A1305B7E2484C",
   downloadUrl:
-    "https://github.com/Ashu2244/Aspizo-website/releases/download/v3.2.0/Aspizo-Traffic-Analyzer-Setup-3.2.0.exe",
+    "https://github.com/Ashu2244/Aspizo-website/releases/download/v3.3.0/Aspizo-Traffic-Analyzer-Setup-3.3.0.exe",
   enginePort: 8765,
   uiPort: 3000,
 };
@@ -500,17 +500,17 @@ export const downloadIncludes = [
 ];
 
 export const installSteps = [
-  "Download Aspizo-Traffic-Analyzer-Setup-3.2.0.exe from this page",
+  "Download Aspizo-Traffic-Analyzer-Setup-3.3.0.exe from this page",
   "Run the Setup and follow the installer prompts",
-  "Launch Aspizo Traffic Analyzer from the Start Menu / Desktop shortcut",
-  "Create a survey → add videos (local folder or Google Drive) → Run Auto Detect",
+  "Open Aspizo Traffic Analyzer from the Desktop / Start Menu shortcut (no .bat or CMD)",
+  "Create a survey → Copy videos into Aspizo → Run Auto Detect → Export CSV",
 ];
 
 export const docsSections = [
   {
     title: "Installation",
     content:
-      "Download Aspizo-Traffic-Analyzer-Setup-3.2.0.exe from the Download page and run the installer. First launch may install Visual C++ runtime, Python 3.12, pip packages, and the YOLO model automatically. The desktop app starts the engine locally; no ZIP extract or START-ASPIZO.bat required.",
+      "Download Aspizo-Traffic-Analyzer-Setup-3.3.0.exe from the Download page and run the installer. Open the Desktop shortcut — the app silently starts the detection engine (splash screen on first run may install Visual C++ / Python / AI packages once). No ZIP extract, no START-ASPIZO.bat, no CMD windows for clients.",
   },
   {
     title: "First Survey Setup",

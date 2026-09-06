@@ -44,13 +44,13 @@ Output folder: `out/`
 
 ## Desktop app download (GitHub Releases)
 
-The Setup EXE (~157 MB) is hosted on GitHub Releases — not in `public/downloads/`
+The Setup EXE (~162 MB) is hosted on GitHub Releases — not in `public/downloads/`
 (GitHub file size limit is 100 MB for repo files).
 
-1. Create release tag `v3.2.0` on this repo
-2. Upload `Aspizo-Traffic-Analyzer-Setup-3.2.0.exe` as a release asset
+1. Create release tag `v3.3.0` on this repo
+2. Upload `Aspizo-Traffic-Analyzer-Setup-3.3.0.exe` as a release asset
 3. Keep `product.downloadUrl` in `src/lib/data.ts` pointing at:
-   `https://github.com/Ashu2244/Aspizo-website/releases/download/v3.2.0/Aspizo-Traffic-Analyzer-Setup-3.2.0.exe`
+   `https://github.com/Ashu2244/Aspizo-website/releases/download/v3.3.0/Aspizo-Traffic-Analyzer-Setup-3.3.0.exe`
 
 
 ## Tech Stack
