@@ -94,14 +94,14 @@ export const products = [
 ] as const;
 
 export const product = {
-  version: "3.4.15",
+  version: "3.4.16",
   releaseDate: "September 2026",
   fileSize: "~159 MB",
-  fileName: "Aspizo-Traffic-Analyzer-Setup-3.4.15.exe",
+  fileName: "Aspizo-Traffic-Analyzer-Setup-3.4.16.exe",
   sha256:
-    "F43067BD1E381B5164465BDE5D4F5C2CAD5493CB2D702914F298BA3E794B8EDE",
+    "1A263F9884F63B2A039E6B643EEBF90A9D42D12ABC425630166CF9C28C475315",
   downloadUrl:
-    "https://github.com/Ashu2244/Aspizo-website/releases/download/v3.4.15/Aspizo-Traffic-Analyzer-Setup-3.4.15.exe",
+    "https://github.com/Ashu2244/Aspizo-website/releases/download/v3.4.16/Aspizo-Traffic-Analyzer-Setup-3.4.16.exe",
   enginePort: 8765,
   uiPort: 3000,
 };
