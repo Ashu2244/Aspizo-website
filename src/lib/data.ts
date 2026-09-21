@@ -94,14 +94,14 @@ export const products = [
 ] as const;
 
 export const product = {
-  version: "3.4.16",
+  version: "3.4.17",
   releaseDate: "September 2026",
   fileSize: "~159 MB",
-  fileName: "Aspizo-Traffic-Analyzer-Setup-3.4.16.exe",
+  fileName: "Aspizo-Traffic-Analyzer-Setup-3.4.17.exe",
   sha256:
-    "1A263F9884F63B2A039E6B643EEBF90A9D42D12ABC425630166CF9C28C475315",
+    "29E96B80E868F501C5DE7B49601CC0555A6D55B8F59CAD82664074F31FDAFCC5",
   downloadUrl:
-    "https://github.com/Ashu2244/Aspizo-website/releases/download/v3.4.16/Aspizo-Traffic-Analyzer-Setup-3.4.16.exe",
+    "https://github.com/Ashu2244/Aspizo-website/releases/download/v3.4.17/Aspizo-Traffic-Analyzer-Setup-3.4.17.exe",
   enginePort: 8765,
   uiPort: 3000,
 };
@@ -500,7 +500,7 @@ export const downloadIncludes = [
 ];
 
 export const installSteps = [
-  "Download Aspizo-Traffic-Analyzer-Setup-3.4.15.exe from this page",
+  "Download Aspizo-Traffic-Analyzer-Setup-3.4.17.exe from this page",
   "Run the Setup and follow the installer prompts",
   "Open Aspizo Traffic Analyzer from the Desktop / Start Menu shortcut (no .bat or CMD)",
   "Create a survey → Copy videos into Aspizo → Run Auto Detect → Export CSV",
@@ -510,7 +510,7 @@ export const docsSections = [
   {
     title: "Installation",
     content:
-      "Download Aspizo-Traffic-Analyzer-Setup-3.4.15.exe from the Download page and run the installer. Open the Desktop shortcut — the app UI opens immediately; first-run engine setup runs in the background (may take several minutes online). No ZIP extract, no START-ASPIZO.bat, no CMD windows for clients.",
+      "Download Aspizo-Traffic-Analyzer-Setup-3.4.17.exe from the Download page and run the installer. Open the Desktop shortcut — the app UI opens immediately; first-run engine setup runs in the background (may take several minutes online). No ZIP extract, no START-ASPIZO.bat, no CMD windows for clients.",
   },
   {
     title: "First Survey Setup",
