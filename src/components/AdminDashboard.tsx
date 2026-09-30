@@ -3,7 +3,8 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 
 // Google Apps Script web app URL (Aspizo-Admin/Code.gs deployment).
-const METRICS_URL = "";
+const METRICS_URL =
+  "https://script.google.com/macros/s/AKfycbz1Oq5zq09HyCTubxpWiEmcJ0Qv0NjTPoj-CGSz7nWNOl-iYIYcl44E5XbxCD0gxlE6/exec";
 
 type Machine = {
   machine_id: string;
